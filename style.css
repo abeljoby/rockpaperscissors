@@ -1,0 +1,86 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: gray;
+    font-size: 36px;
+}
+
+.actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+button {
+    flex: 1 1;
+    aspect-ratio: 1 / 1;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+.rock {
+    background-image: url("./rock.png");
+    background-size: cover;
+}
+
+.paper {
+    background-image: url("./paper.png");
+    background-size: cover;
+}
+
+.scissors {
+    background-image: url("./scissors.png");
+    background-size: cover;
+}
+
+.results {
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.computer {
+    display: flex;
+    /* margin-top: auto; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.computer img {
+    width: 200px;
+    height: 200px;
+    transform: scaleX(-1);
+    filter: grayscale(0.6);
+}
+
+#outcome {
+    font-size: 24px;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    justify-self: flex-end;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
